@@ -10,7 +10,12 @@ const AboutMe = () => {
       </h2>
 
       <p className='text-base text-gray-400'>
-       Frontend Developer with +{calculateDuration('2022-01-01', false)} years of JavaScript experience and a constant interest in learning new technologies. I have solid experience in Frontend development, using technologies and frameworks like JavaScript, TypeScript, React, Next.js. Additionally, I have skills in Backend development with Node.js, Express, and MongoDB (NoSQL). I consistently follow best practices in prototyping, clean architecture, SOLID principles, pixel-perfect, GitFlow, and agile methodologies. I am currently exploring to be DevOps, by doing projects with tools and technologies such as (AWS, CI/CD, Docker, Kubernetes, Jenkins, Terraform)
+        Computer Science student at the University of San Carlos with hands-on experience in building modern web applications. 
+        I specialize in frontend development using React, Next.js, TypeScript, and JavaScript, and I have solid backend experience 
+        with Express, Python, and SQL-based databases. I’m passionate about writing clean, maintainable code and continuously 
+        improving through best practices such as clean architecture, modular design, and version control using Git. 
+        I enjoy working on collaborative projects and exploring the full development lifecycle—from prototyping to deployment. 
+        I’m currently deepening my skills in scalable system design and DevOps practices to become a more versatile developer.
       </p>
 
     </AnimationContainer>
