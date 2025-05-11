@@ -1,26 +1,26 @@
 export const skills = [
   {
     title: 'Languages',
-    techs: ['JavaScript', 'TypeScript']
+    techs: ['JavaScript', 'TypeScript', 'Python', 'C']
   },
   {
     title: 'Frameworks and libraries',
-    techs: ['React.js', 'Next.js', 'Angular', 'Ionic', 'Electron.js', 'jQuery']
+    techs: ['React.js', 'Next.js']
   },
   {
-    title: 'JavaScript libraries',
-    techs: ['Redux', 'TanStack Query', 'Zustand', 'Jest', 'Storybook']
+    title: 'Libraries',
+    techs: ['Jest', 'React Charts', 'React-Hook-Form', 'Framer Motion']
   },
   {
     title: 'HTML and CSS Preprocessors, styles component and motion libraries',
-    techs: ['Pug', 'Sass', 'Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
+    techs: ['Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
   },
   {
     title: 'Backend stack',
-    techs: ['noSQL', 'Node.js', 'Express.js', 'Graphql', 'apollo', 'MongoDB', 'Firebase', 'Sanity CMS']
+    techs: ['Node.js', 'Express.js',]
   },
   {
     title: 'Softwares and tools',
-    techs: ['Git', 'Postman', 'Figma', 'Photoshop', 'WordPress', 'Elementor']
+    techs: ['Git', 'Thunderclient', 'Figma', 'Canva', 'Lucidchart']
   },
 ];
