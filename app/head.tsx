@@ -10,9 +10,9 @@ const Head = () => {
   const titleFixedToShow = pathname.slice(1).charAt(0).toUpperCase() + pathname.slice(2);
 
   const meta = {
-    title: `Jean Rondón ${pathname === '/' ? '' : '· ' + titleFixedToShow}`,
-    description: `Hi! My name is Jean Rondón I'm from Venezuela and I have +3 year of work experience in JavaScript and React, I'm a lover of page design or other things and whenever I can I try to learn new technologies since I discovered programming at 16. I love what I do and I help others with what I can, I also use in web, mobile and desktop development Next.js, Angular, Ionic and Electron implementing good practices, clean architecture, pixel perfect and agile methodologies.`,
-    keywords: 'Jean Rondon, Jeandv, Jean Rondon portafolio, Jeandv portafolio, Jeandv portfolio, Jean Rondon portfolio, Jeandv github, Jean Rondon github, Jeandv LinkedIn, Jean Rondon LinkedIn, Web, Desarrollo web, Programador web, Diseño web, Paginas web, Aplicaciones web, Aplicaciones móviles, Aplicaciones escritorio, Desarrollo frontend, Programador frontend, HTML, CSS, Javascript, Typescript, React, Angular.',
+    title: `Derek Berbo ${pathname === '/' ? '' : '· ' + titleFixedToShow}`,
+    description: `Hi! My name is Derek Berbo, I'm from Cebu and currently a Computer Science student at the University of San Carlos. I build full-stack applications with a focus on frontend development using React, Next.js, TypeScript, and JavaScript. I'm always learning and improving my craft, applying best practices like clean architecture, modular design, and pixel-perfect implementation. I also work with Express, Python, and SQL databases for backend development. I'm passionate about tech and constantly exploring new tools and approaches to become a well-rounded developer.`,
+    keywords: 'Derek Berbo, Derek Berbo portfolio, Derek Berbo GitHub, Derek Berbo LinkedIn, Cebu developer, React developer, Next.js, TypeScript, JavaScript, Express, Python, SQL, Frontend Developer, Fullstack Developer, Web Development, Clean Code, University of San Carlos, USC CS Student',
     type: 'website'
   };
 
