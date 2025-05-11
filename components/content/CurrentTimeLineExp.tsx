@@ -23,27 +23,19 @@ const CurrentTimeLineExp = () => {
 
       <TimelineEvent active>
 
-        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>IA Interactive</a> | Mar. 2023 - {calculateDuration('2023-03-01', true)}</TimelineEvent.Title>
+        <TimelineEvent.Title><a href='https://www.ia.com.mx' target='_blank' rel='noopener noreferrer' className='hover:text-white hover:underline transition-all ease'>Freelance</a> | Feb. 2025 - {calculateDuration('2025-02-01', true)}</TimelineEvent.Title>
 
         <TimelineEvent.Description>
-          Frontend development and maintenance of projects implementing agile methodologies (SCRUM) and best practices such as SOLID principles, pixel perfect, clean architecture and using microfrontends practices with the following technologies and tools: Git, Bitbucket, HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, React, Next.js, Redux, Jest, Storybook, Microfrontends and GitFlow.
-        </TimelineEvent.Description>
+          Frontend development and freelance website projects, including full-cycle delivery for a client using Next.js, Tailwind CSS, and Framer Motion. I applied best practices such as clean architecture, modular design, pixel-perfect implementation, and Git version control. The work was managed independently, following agile-inspired iterations and client feedback to ensure fast and flexible delivery.
+          </TimelineEvent.Description>
 
         <TimelineEvent.Description>
-          I have actively participated in the development and maintenance of digital projects for a leading chain in the film entertainment industry with a presence throughout Latin America and Spain. In these projects, innovative solutions were used, including one based on microfrontends alongside Storybook, which enabled the creation of isolated, highly reusable, and easy-to-maintain components.
+        In addition to development, I also focused on SEO optimization and performance tuning. I utilized tools such as Google Search Console, Lighthouse, Vercel Analytics, and Bing Webmaster Tools to improve the site's search engine visibility and performance. This led to an enhanced online presence for the client’s business. I also handled ongoing site maintenance, ensuring the website stayed fast, accessible, and up to date.
         </TimelineEvent.Description>
 
-        <TimelineEvent.Description>
-          The projects were developed using Next.js and TypeScript, technologies that significantly improved efficiency, scalability, and code robustness. Additionally, agile methodologies such as SCRUM were applied to ensure continuous and efficient delivery, along with SOLID design principles to ensure clean and maintainable code.
-        </TimelineEvent.Description>
+        </TimelineEvent>
 
-        <TimelineEvent.Description>
-          Efforts were also focused on achieving pixel-perfect designs, implementing clean architectures, and following GitFlow practices for optimal version control. All of this contributed to delivering high-quality digital experiences for millions of users on the platform.
-        </TimelineEvent.Description>
-
-      </TimelineEvent>
-
-      <TimelineEvent>
+      {/* <TimelineEvent>
 
         <TimelineEvent.Title>Freelance | Feb. 2022 - Mar. 2023</TimelineEvent.Title>
 
@@ -61,7 +53,7 @@ const CurrentTimeLineExp = () => {
           Web designer and responsive web designer on projects using Figma, HTML, CSS, SCSS, SASS, Bootstrap, JavaScript, jQuery implementing SCRUM, pixel perfect and clean code.
         </TimelineEvent.Description>
 
-      </TimelineEvent>
+      </TimelineEvent> */}
 
     </Timeline>
   )
