@@ -9,42 +9,44 @@ const allProjectsInfo = [
   {
     id: '1',
     title: 'CATalog Mobile',
-    des: 'Project using the pokeapi api, you can search the pokemons you want.',
+    des: 'A simplified mobile version of the CATalog web app, designed for seamless inventory management on the go.',
     category: 'Typescript - React Native',
-    repo: 'https://jeandv.github.io/pokedex',
-    link: 'https://jeandv.github.io/pokedex'
+    repo: 'https://github.com/pickachuuu/CATalog',
   },
   {
     id: '2',
-    title: 'CATalog',
-    des: 'This is one of the challenges done in CADIF1 Academy. ',
-    category: 'Javascript - React - Express - MYSQL',
-    repo: 'https://jeandv.github.io/memoria-game',
-    link: 'https://github.com/jeandv/memoria-game'
+    title: 'CH5 Cooling Supplies',
+    des: 'My first client website project, built with Next.js and TailwindCSS for a modern, responsive business presence.',
+    category: 'Typescript - NextJS',
+    link: 'https://www.ch5coolingtowers.com.ph/'
   },
   {
     id: '3',
-    title: 'CH5 Cooling Supplies',
-    des: 'frontendmentor.io challenge where I use the github api to be able to search for github users.',
-    category: 'Typescript - NextJS',
-    repo: 'https://jeandv.github.io/pokedex',
-    link: 'https://jeandv.github.io/pokedex'
+    title: 'CATalog',
+    des: 'A full-stack inventory management system developed with React and Express, enabling efficient product tracking and management.',
+    category: 'Javascript - React - Express - MYSQL',
+    repo: 'https://github.com/pickachuuu/ims-frontend',
   },
   {
     id: '5',
     title: 'PongBat',
-    des: 'Save your favorite movies with the ability to edit, delete and search for matches.',
+    des: 'A remastered version of Pong, featuring enhanced graphics, custom sprites, and a redesigned scoring system using Python and Pygame.',
     category: 'Python - Pygame',
-    repo: 'https://github.com/jeandv/mispelis',
-    link: 'https://mispelis.vercel.app'
+    repo: 'https://github.com/pickachuuu/PongBat',
   },
   {
     id: '6',
     title: 'Dino Jump',
-    des: 'Gif finder using giphy.com api.',
+    des: 'A Python and Pygame recreation of the classic Chrome Dino game, offering a fun and challenging endless runner experience.',
     category: 'Python - Pygame',
-    repo: 'https://github.com/jeandv/maps-app',
-    link: 'https://gixfy.vercel.app'
+    repo: 'https://github.com/pickachuuu/Dino',
+  },
+  {
+    id: '7',
+    title: 'Pong',
+    des: 'My first coding project: a faithful recreation of the classic Pong game using Python and Pygame.',
+    category: 'Python - Pygame',
+    repo: 'https://github.com/pickachuuu/Pong',
   },
 ];
 
