@@ -21,10 +21,10 @@ const Hero = () => {
 
       {/* <AnimationContainer customClassName='w-[80px] sm:w-[176px] relative mb-6 lg:mb-0'>
         <Image
-          alt='Jean Rondón'
+          alt='Derek Berbo'
           height={176}
           width={176}
-          src='/jeandv.jpg'
+          src='/CDB.jpg'
           sizes='30vw'
           priority
           className='rounded-[8px] filter grayscale hover:grayscale-0 transition ease'
