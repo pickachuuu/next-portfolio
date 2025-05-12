@@ -23,15 +23,15 @@ const Head = () => {
       <meta name='robots' content='follow, index' />
       <meta content={meta.description} name='description' />
       <meta name='keywords' content={meta.keywords} />
-      <meta property='og:url' content={`https://jeandv.vercel.app${pathname}`} />
-      <link rel='canonical' href={`https://jeandv.vercel.app${pathname}`} />
-      <link rel='me' href='mailto:jeanrdev@gmail.com' />
+      <meta property='og:url' content={`derek-five.vercel.app${pathname}`} />
+      <link rel='canonical' href={`derek-five.vercel.app${pathname}`} />
+      <link rel='me' href='mailto:chrisDerekBerbo@gmail.com' />
       <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content='Jean Rondón' />
+      <meta property='og:site_name' content='Derek Berbo' />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@jeandv_' />
+      {/* <meta name='twitter:site' content='@jeandv_' /> */}
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
     </>
