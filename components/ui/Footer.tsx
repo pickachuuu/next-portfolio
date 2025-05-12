@@ -8,7 +8,7 @@ const Footer = () => {
 
       <hr className='w-full border-1 border-gray-800 mb-8' />
 
-      <AnimationContainer customClassName='w-full grid place-items-center grid-cols-3 gap-1 lg:gap-4 pb-8 sm:grid-cols-3 mx-3'>
+      <AnimationContainer customClassName='w-full grid place-items-center grid-cols-2 gap-1 lg:gap-4 pb-8 sm:grid-cols-2 mx-3'>
 
         <div className='flex flex-col space-y-4'>
 
