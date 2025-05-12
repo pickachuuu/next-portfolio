@@ -72,7 +72,7 @@ const ContactMe = () => {
 
         <div className="w-full flex justify-center items-center flex-col">
           <form
-            action="https://formspree.io/f/xdorkorr"
+            action="https://formspree.io/f/xanopwrr"
             method="POST"
             className="w-full space-y-4"
           >
