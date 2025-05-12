@@ -33,7 +33,7 @@ body, * {
 }
 
 .bg-grad {
-  background-image: radial-gradient(at 27% 9%, hsl(259.5, 100%, 11%) 0, transparent 45%), radial-gradient(at 108% 65%, hsl(273.10, 100%, 11%) 0, transparent 55%);
+  background-image: radial-gradient(at 27% 9%, hsl(0, 100%, 8%) 0, transparent 45%), radial-gradient(at 108% 65%, hsl(304, 100%, 11%) 0, transparent 55%);
 }
 
 @media screen and (max-width: 768px) {
