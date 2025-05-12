@@ -16,13 +16,30 @@ const useStyles = createStyles((theme: any) => ({
     padding: '10px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    position: 'relative',
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      background: 'linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7))',
+      borderRadius: theme.radius.md,
+      zIndex: 1,
+    },
+    '& > div': {
+      position: 'relative',
+      zIndex: 2,
+    },
   },
 
   title: {
     color: theme.white,
     lineHeight: 1.2,
-    fontSize: 32,
-    marginTop: theme.spacing.xs,
+    fontSize: 20,
+    fontWeight: 700,
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
   },
 
   category: {
@@ -78,52 +95,39 @@ const Card = ({ image, title, category, repo, link }: CardProps) => {
 
 const favProjects = [
   {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/587bf66c35c35c26dc6c20d85e9166d236227e29-1440x806.png',
-    title: '',
-    category: 'React - Context - TypeScript - CSS - Mapbox',
-    repo: 'https://github.com/jeandv/maps-app',
-    link: 'https://mapsapp.vercel.app'
-  },
-  {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/9d452c28dc252302b90e6e2408b81ce3ed111957-1440x803.png',
-    title: '',
-    category: 'Next.js - Context - TypeScript - Node - MongoDB - MaterialUI',
-    repo: 'https://github.com/jeandv/open-jira',
-    link: 'https://open-jira-jeandv.vercel.app'
-  },
-  {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/bb12572785fdc98c304ff9823cab3f60bc16f8b7-1422x809.png',
-    title: 'Github Issues',
-    category: '',
+    image:'https://i.ibb.co/Cs4qT0y7/5.png',
+    title: 'CATalog Mobile',
+    category: 'Typescript - React Native',
     repo: 'https://github.com/jeandv/react-query',
     link: 'https://github.com/jeandv/react-query'
   },
   {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/0844f66435c099fb020b8235657491a3166bd713-1280x800.png',
-    title: '',
+    image:'https://i.ibb.co/PsJ13xtn/1.png',
+    title: 'Dino Jump',
+    category: 'Python - Pygame',
+    repo: 'https://github.com/jeandv/maps-app',
+    link: 'https://mapsapp.vercel.app'
+  },
+  {
+    image:'https://i.ibb.co/pryFZPrX/2.png',
+    title: 'PongBat',
+    category: 'Python - Pygame',
+    repo: 'https://github.com/jeandv/open-jira',
+    link: 'https://open-jira-jeandv.vercel.app'
+  },
+  {
+    image:'https://i.ibb.co/ksdbMmgg/4.png',
+    title: 'CH5 Cooling',
     category: 'Next.js - TypeScript - NextUI - Pokeapi',
     repo: 'https://github.com/jeandv/pokedex-next',
     link: 'https://pokedex-jeandv.vercel.app'
   },
   {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/5d3fb4c2893e2ab9a3667431696b0789f004177f-1428x807.png',
-    title: 'MisPelis',
+    image:'https://i.ibb.co/bRYbMcBx/3.png',
+    title: 'CATalog',
     category: 'React - JavaScript - CSS',
     repo: 'https://mispelis.vercel.app',
     link: 'https://github.com/jeandv/mispelis'
-  },
-  {
-    image:
-      'https://cdn.sanity.io/images/jqaxrty6/production/32f71c8c2225276c64e64ce86777c3df09a878e6-1426x807.png',
-    title: 'Gixfy',
-    category: 'React - JavaScript - Jest - Wouter',
-    repo: 'https://gixfy.vercel.app',
-    link: 'https://github.com/jeandv/gixfy'
   }
 ];
 
