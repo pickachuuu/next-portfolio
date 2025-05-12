@@ -29,7 +29,7 @@ const AboutSection = () => {
           <h2 className='font-bold text-2xl md:text-2xl tracking-tight mb-2 text-white text-start'>Skills</h2>
 
           <p className='text-base text-gray-400'>
-            A look at all the programming languages, libraries, and tools I've worked with, I started programming about +{calculateDuration('2020-01-01', false)} ago. I have tried a few programming languages and technology stack, both Backend and Frontend.
+          A glimpse into the programming languages, libraries, and tools I've worked with. I began my programming journey around {calculateDuration('2022-01-01', false)} ago, and over the years, I've explored a variety of technologies across both backend and frontend development. I'm currently a 3rd year Computer Science student, constantly learning and building.
           </p>
 
           <p className='text-base text-gray-400'>
