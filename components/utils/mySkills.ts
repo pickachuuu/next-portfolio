@@ -13,7 +13,7 @@ export const skills = [
   },
   {
     title: 'HTML and CSS Preprocessors, styles component and motion libraries',
-    techs: ['Bootstrap', 'Tailwind', 'ChakraUI', 'MaterialUI', 'NextUI', 'Framer Motion']
+    techs: ['Bootstrap', 'Tailwind', 'MaterialUI', 'Framer Motion']
   },
   {
     title: 'Backend stack',
