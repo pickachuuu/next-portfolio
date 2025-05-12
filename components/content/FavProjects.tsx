@@ -132,7 +132,7 @@ const favProjects = [
     image:'https://i.ibb.co/FLHcWMHN/website-coming-soon-3.png',
     title:'Pong',
     category:'Python - Pygame',
-    repo: '',
+    repo: 'https://github.com/pickachuuu/Pong',
   }
 ];
 
