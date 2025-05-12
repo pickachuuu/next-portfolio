@@ -1,85 +1,49 @@
 'use client'
 
-import React, { useState, ChangeEvent } from 'react';
+import React from 'react';
 import AnimationContainer from '../utils/AnimationContainer';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactMe = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  const [state, handleSubmit] = useForm('xdorkorr');
 
-  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setPhone(e.target.value);
-  };
-
-  const handleMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    setMessage(e.target.value);
-  };
-
-  const isFormValid = () => {
+  if (state.succeeded) {
     return (
-      name.length >= 3 &&
-      email.length >= 10 &&
-      phone.length >= 6 &&
-      message.length >= 20
+      <AnimationContainer customClassName="w-full">
+        <h2 className="font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start" id="contact">
+          Contact me
+        </h2>
+        <div className="w-full flex justify-center items-center flex-col mx-auto max-w-screen-xl">
+          <p className="text-lg text-green-400">Thank you for reaching out! I will get back to you soon.</p>
+        </div>
+      </AnimationContainer>
     );
-  };
+  }
 
   return (
     <AnimationContainer customClassName="w-full">
-      <h2
-        className="font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start"
-        id="contact"
-      >
+      <h2 className="font-bold text-2xl md:text-2xl tracking-tight mb-8 text-white text-center lg:text-start" id="contact">
         Contact me
-      </h2>
+      </h2> 
 
       <div className="w-full flex justify-between items-center flex-col mx-auto max-w-screen-xl">
         <div className="w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10">
           <div className="w-full rounded border border-gray-800 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease">
-            <h6 className="font-bold text-1xl tracking-tight text-white text-start">
-              Email
-            </h6>
-            <p className="text-base mt-2 text-gray-400">
-              ChrisDerekBerbo@gmail.com
-            </p>
+            <h6 className="font-bold text-1xl tracking-tight text-white text-start">Email</h6>
+            <p className="text-base mt-2 text-gray-400">ChrisDerekBerbo@gmail.com</p>
           </div>
-          {/* </a> */}
-
-          <a
-            href="https://wa.link/ke5dhr"
-            target="_blank"
-            rel="noreferrer"
-            className="w-full"
-          >
+          <a href="https://wa.link/ke5dhr" target="_blank" rel="noreferrer" className="w-full">
             <div className="w-full rounded border border-gray-800 bg-[#080809] p-4 shadow-sm sm:p-6 transition ease">
-              <h6 className="font-bold text-1xl tracking-tight text-white text-start">
-                Phone
-              </h6>
+              <h6 className="font-bold text-1xl tracking-tight text-white text-start">Phone</h6>
               <p className="text-base mt-2 text-gray-400">+639937834931</p>
             </div>
           </a>
         </div>
 
         <div className="w-full flex justify-center items-center flex-col">
-          <form
-            action="https://formspree.io/f/xanopwrr"
-            method="POST"
-            className="w-full space-y-4"
-          >
+          <form onSubmit={handleSubmit} className="w-full space-y-4">
             <div>
-              <label className="sr-only" htmlFor="name">
-                Name
-              </label>
+              <label className="sr-only" htmlFor="name">Name</label>
               <input
                 className="w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-900 focus:border-gray-800 transition ease"
                 placeholder="Name"
@@ -87,16 +51,13 @@ const ContactMe = () => {
                 id="name"
                 name="name"
                 required
-                value={name}
-                onChange={handleNameChange}
               />
+              <ValidationError prefix="Name" field="name" errors={state.errors} />
             </div>
 
             <div className="grid grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2">
               <div>
-                <label className="sr-only" htmlFor="email">
-                  Email
-                </label>
+                <label className="sr-only" htmlFor="email">Email</label>
                 <input
                   className="w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-900 focus:border-gray-800 transition ease"
                   placeholder="Email"
@@ -104,50 +65,41 @@ const ContactMe = () => {
                   id="email"
                   name="email"
                   required
-                  value={email}
-                  onChange={handleEmailChange}
                 />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
               </div>
 
               <div>
-                <label className="sr-only" htmlFor="phone">
-                  Phone
-                </label>
+                <label className="sr-only" htmlFor="phone">Phone</label>
                 <input
                   className="w-full rounded p-3 text-base outline-none border text-white bg-black border-gray-900 focus:border-gray-800 transition ease"
                   placeholder="Phone"
                   type="tel"
                   id="phone"
                   name="phone"
-                  required
-                  value={phone}
-                  onChange={handlePhoneChange}
                 />
+                <ValidationError prefix="Phone" field="phone" errors={state.errors} />
               </div>
             </div>
 
             <div>
-              <label className="sr-only" htmlFor="message">
-                Message
-              </label>
+              <label className="sr-only" htmlFor="message">Message</label>
               <textarea
                 className="w-full h-32 rounded p-3 text-base outline-none border text-white bg-black border-gray-900 focus:border-gray-800 transition ease"
                 placeholder="Message"
                 id="message"
                 name="message"
                 required
-                value={message}
-                onChange={handleMessageChange}
               ></textarea>
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
             </div>
 
             <button
               type="submit"
               className="flex items-center justify-center rounded px-5 py-3 text-white bg-black hover:bg-gray-900 shadow-sm transition ease mx-auto"
-              disabled={!isFormValid()}
+              disabled={state.submitting}
             >
               <span className="font-medium text-base">Send</span>
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="ml-3 h-5 w-5"
