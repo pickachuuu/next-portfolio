@@ -99,37 +99,44 @@ const Card = ({ image, title, category, repo, link }: CardProps) => {
 
 const favProjects = [
   {
-    image:'https://i.ibb.co/Cs4qT0y7/5.png',
+    image: '/images/memoForge.png',
+    title: 'MemoForge',
+    category: 'Typescript - NextJS - Supabase',
+    repo: 'https://github.com/pickachuuu/revisea',
+    link: 'https://memoforge.vercel.app/auth'
+  },
+  {
+    image:'/images/catalogMobile.png',
     title: 'CATalog Mobile',
     category: 'Typescript - React Native',
     repo: 'https://github.com/pickachuuu/CATalog',
   },
   {
-    image:'https://i.ibb.co/ksdbMmgg/4.png',
+    image:'/images/ch5.png',
     title: 'CH5 Cooling',
     category: 'Typescript - Next.js - Tailwindcss',
     link: 'https://www.ch5coolingtowers.com.ph/'
   },
   {
-    image:'https://i.ibb.co/bRYbMcBx/3.png',
+    image:'/images/catalog.png',
     title: 'CATalog',
     category: 'React - JavaScript - Bootstrap - Express - Mysql',
     repo: 'https://github.com/pickachuuu/ims-frontend',
   },
   {
-    image:'https://i.ibb.co/pryFZPrX/2.png',
+    image:'./images/pongBat.png',
     title: 'PongBat',
     category: 'Python - Pygame',
     repo: 'https://github.com/pickachuuu/PongBat',
   },
   {
-    image:'https://i.ibb.co/PsJ13xtn/1.png',
+    image:'/images/dinoJump.png',
     title: 'Dino Jump',
     category: 'Python - Pygame',
     repo: 'https://github.com/pickachuuu/Dino',
   },
   {
-    image:'https://i.ibb.co/FLHcWMHN/website-coming-soon-3.png',
+    image:'/images/pong.png',
     title:'Pong',
     category:'Python - Pygame',
     repo: 'https://github.com/pickachuuu/Pong',
