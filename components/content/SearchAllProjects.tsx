@@ -7,6 +7,14 @@ import { CardProjectProps } from '@/types';
 
 const allProjectsInfo = [
   {
+    id: '0',
+    title: 'MemoForge',
+    des: 'Smart Learning Platform',
+    category: 'Typescript - NextJS - Supabase',
+    repo: 'https://github.com/pickachuuu/revisea',
+    link: 'https://memoforge.vercel.app/auth'
+  },
+  {
     id: '1',
     title: 'CATalog Mobile',
     des: 'A simplified mobile version of the CATalog web app, designed for seamless inventory management on the go.',
